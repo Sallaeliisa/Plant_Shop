@@ -1,0 +1,21 @@
+@import "variables";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: $primary-color;
+  ul {
+    list-style: none;
+    padding: 1rem;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    padding: 20px;
+  }
+}
