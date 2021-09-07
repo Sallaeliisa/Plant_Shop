@@ -1,9 +1,11 @@
 import React from 'react';
 
-const ProductCard = () => {
+const ProductCard = ({name, prize}) => {
     return (
-        <div>
-            <p>product card</p>
+        <div className='card'>
+            <h1>{name}</h1>
+            <p>{prize} €</p>
+            <button>Buy</button>
         </div>
     );
 };

@@ -1,0 +1,20 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "coneflower",
+            "latinName": "Echinacea purpurea",
+            "color": "red",
+            "prize": 18,
+            "category": "perennials"
+        },
+        {
+            "id": 2,
+            "name": "gooseneck loosestrife",
+            "latinName": "Lysimachia clethroides",
+            "color": "white",
+            "prize": 9,
+            "category": "perennials"
+        }
+    ]
+}

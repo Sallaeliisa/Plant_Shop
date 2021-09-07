@@ -1,12 +1,21 @@
-import MainRouter from './components/MainRouter';
-import './scss/main.scss';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import MainRouter from "./components/MainRouter";
+import "./scss/main.scss";
+import { initializeProducts } from "./store/actions/actions";
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(initializeProducts());
+  }, [dispatch]);
+
   return (
     <div className="App">
       <MainRouter />
     </div>
   );
-}
+};
 
 export default App;
