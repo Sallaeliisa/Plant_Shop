@@ -2,7 +2,8 @@
     "products": [
         {
             "id": 1,
-            "name": "coneflower",
+            "mainImg": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/echinaceas.jpg",
+            "name": "Coneflower",
             "latinName": "Echinacea purpurea",
             "color": "red",
             "prize": 18,
@@ -10,10 +11,29 @@
         },
         {
             "id": 2,
-            "name": "gooseneck loosestrife",
+            "mainImg": "https://www.gardenia.net/storage/app/public/uploads/images/detail/cbXoFGROh1IirXAuYXnznEy7Y8SgcnphTZHEyDAT.jpeg",
+            "name": "Gooseneck loosestrife",
             "latinName": "Lysimachia clethroides",
             "color": "white",
             "prize": 9,
+            "category": "perennials"
+        },
+        {
+            "id": 3,
+            "mainImg": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/echinaceas.jpg",
+            "name": "Coneflower",
+            "latinName": "Echinacea purpurea",
+            "color": "red",
+            "prize": 18,
+            "category": "perennials"
+        },
+        {
+            "id": 4,
+            "mainImg": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/echinaceas.jpg",
+            "name": "Coneflower",
+            "latinName": "Echinacea purpurea",
+            "color": "red",
+            "prize": 18,
             "category": "perennials"
         }
     ]
