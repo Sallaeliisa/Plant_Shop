@@ -13,6 +13,7 @@ const ProductList = () => {
           mainImg={product.mainImg}
           name={product.name}
           latinName={product.latinName}
+          color={product.color}
           prize={product.prize}
         />
       </div>

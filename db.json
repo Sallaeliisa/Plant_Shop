@@ -5,7 +5,7 @@
             "mainImg": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/echinaceas.jpg",
             "name": "Coneflower",
             "latinName": "Echinacea purpurea",
-            "color": "red",
+            "color": "pink",
             "prize": 18,
             "category": "perennials"
         },
@@ -20,20 +20,38 @@
         },
         {
             "id": 3,
-            "mainImg": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/echinaceas.jpg",
-            "name": "Coneflower",
-            "latinName": "Echinacea purpurea",
-            "color": "red",
-            "prize": 18,
+            "mainImg": "https://www.brooksidenursery.co.uk/user/products/large/Helenium%20Moerheim%20Beauty%20resized.jpeg",
+            "name": "Sneezeweed",
+            "latinName": "Helenium autumnale",
+            "color": "red shades",
+            "prize": 14,
             "category": "perennials"
         },
         {
             "id": 4,
-            "mainImg": "https://www.gardeningknowhow.com/wp-content/uploads/2021/05/echinaceas.jpg",
+            "mainImg": "https://m.media-amazon.com/images/I/51UpZ8UgDDL._AC_.jpg",
             "name": "Coneflower",
             "latinName": "Echinacea purpurea",
-            "color": "red",
+            "color": "light yellow",
             "prize": 18,
+            "category": "perennials"
+        },
+        {
+            "id": 5,
+            "mainImg": "https://s3.amazonaws.com/eit-planttoolbox-prod/media/images/Viola-cornuta--Kate-Foy--CC-BY-NC-ND.jpg",
+            "name": "Pansy",
+            "latinName": "Viola cornuta",
+            "color": "blue and yellow",
+            "prize": 3,
+            "category": "annuals"
+        },
+        {
+            "id": 6,
+            "mainImg": "https://h2.commercev3.net/cdn0.michiganbulb.com/images/500/06326.jpg",
+            "name": "Tulip mix",
+            "latinName": "Tulipa",
+            "color": "purple and white",
+            "prize": 12,
             "category": "perennials"
         }
     ]

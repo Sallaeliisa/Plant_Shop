@@ -26,15 +26,24 @@ nav {
 //Product cards
 
 .listContainer {
+  margin-top: 1.2vw;
   display: flex;
   align-items: center;
   justify-content: center;
 
 .productCardList {
   width: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  // grid-auto-columns: max-content;
+  // grid-auto-flow: dense;
+  // grid-auto-rows: minmax(50px, fit-content(100%));
+  grid-gap: 1.2vw;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 .border-light {
@@ -44,6 +53,7 @@ nav {
 .card-subtitle {
   font-style: italic;
   font-weight: normal;
+  margin-bottom: .2rem;
 }
 
 .card-body {
@@ -52,8 +62,12 @@ nav {
 
 img.card-img-top {
   height: 200px;
-  width: 100%;
+  // width: 100%;
   object-fit: cover;
+}
+
+p.card-text {
+  margin-bottom: .2rem;
 }
 
 }
