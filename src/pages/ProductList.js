@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import ProductCard from "../containers/ProductCard";
+import ProductNav from "../components/ProductNav";
 
 const ProductList = () => {
   const products = useSelector((state) => state);
@@ -21,10 +22,11 @@ const ProductList = () => {
   });
 
   return (
-    <div className="listContainer">
-    <div className="productCardList">
-      {listedProducts}
-    </div>
+    <div>
+      <ProductNav />
+      <div className="gridContainer">
+        <div className="productCardList">{listedProducts}</div>
+      </div>
     </div>
   );
 };
