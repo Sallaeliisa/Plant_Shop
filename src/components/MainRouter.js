@@ -6,8 +6,13 @@ import Products from "../pages/ProductList";
 import Cart from "../pages/Cart";
 
 const MainRouter = () => {
-
   const cart = useSelector((state) => state.cart);
+  let count = 0;
+
+  cart.map((item) => {
+    count += item.quantity;
+    console.log(count); 
+  });
 
   return (
     <Router>
@@ -20,7 +25,7 @@ const MainRouter = () => {
             <Link to="/products">Products</Link>
           </li>
           <li>
-            <Link to="/cart">Cart ({cart.length})</Link>
+            <Link to="/cart">Cart ({count})</Link>
           </li>
         </ul>
       </nav>

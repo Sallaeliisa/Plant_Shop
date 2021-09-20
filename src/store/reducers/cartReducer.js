@@ -11,7 +11,6 @@ const cartReducer = (state = [], action) => {
       updatedItemIndex = updatedCart.findIndex(
         (item) => item.id === action.data.id
       );
-      console.log(updatedItemIndex);
       if (updatedItemIndex < 0) {
         updatedCart.push({ ...action.data, quantity: 1 });
       } else {
