@@ -54,5 +54,6 @@
             "prize": 12,
             "category": "perennials"
         }
-    ]
+    ],
+    "cart": []
 }

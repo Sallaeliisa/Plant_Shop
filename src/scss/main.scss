@@ -127,11 +127,35 @@ svg {
   }
 
   .colorButton {
-    background-color: red;
-    border-radius: 10px;
-    width: 50%;
-    height: 50px;
+    padding: 0;
+    width: fit-content;
+
+    svg {
+      height: 2rem;
+      width: auto;
+      margin: .5rem 0 .5rem 0;
+    }
   }
+
+  // #red {
+  //   color: red;
+  // }
+  // #orange {
+  //   color: orange;
+  // }
+  // #yellow {
+  //   color: yellow;
+  // }
+  // #green {
+  //   color: green;
+  // }
+  // #blue {
+  //   color: blue;
+  // }
+  // #purple {
+  //   color: purple;
+  // }
+
 
 }
 

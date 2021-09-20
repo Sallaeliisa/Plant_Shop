@@ -1,6 +1,6 @@
 import * as actionTypes from "../actions/actions";
 
-const reducer = (state = [], action) => {
+const productReducer = (state = [], action) => {
   switch (action.type) {
     case actionTypes.INIT_PRODUCTS:
       return action.data;
@@ -10,4 +10,4 @@ const reducer = (state = [], action) => {
   }
 };
 
-export default reducer;
+export default productReducer;

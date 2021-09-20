@@ -1,10 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Home from "../pages/Home";
 import Products from "../pages/ProductList";
 import Cart from "../pages/Cart";
 
 const MainRouter = () => {
+
+  const cart = useSelector((state) => state.cart);
+
   return (
     <Router>
       <nav>
@@ -16,7 +20,7 @@ const MainRouter = () => {
             <Link to="/products">Products</Link>
           </li>
           <li>
-            <Link to="/cart">Cart(0)</Link>
+            <Link to="/cart">Cart ({cart.length})</Link>
           </li>
         </ul>
       </nav>
