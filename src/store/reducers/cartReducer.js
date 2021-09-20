@@ -22,6 +22,23 @@ const cartReducer = (state = [], action) => {
         updatedCart[updatedItemIndex] = updatedItem;
       }
       return updatedCart;
+    case actionTypes.REMOVE_PRODUCT:
+      updatedCart = [...state];
+      updatedItemIndex = updatedCart.findIndex(
+        (item) => item.id === action.data
+      );
+      const updatedItem = {
+        ...updatedCart[updatedItemIndex],
+      };
+      updatedItem.quantity--;
+
+      if (updatedItem.quantity <= 0) {
+        updatedCart.splice(updatedItemIndex, 1);
+      } else {
+        updatedCart[updatedItemIndex] = updatedItem;
+      }
+
+      return updatedCart;
 
     default:
       return state;

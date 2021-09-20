@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addProduct } from "../store/actions/actions";
+import { addProduct, removeProduct } from "../store/actions/actions";
 import CartCard from "../containers/CartCard";
 
 const Cart = () => {
@@ -17,7 +17,7 @@ const Cart = () => {
           latinName={product.latinName}
           color={product.color}
           prize={product.prize}
-          removeBtn={<button>-</button>}
+          removeBtn={<button onClick={() => dispatch(removeProduct(product.id))}>-</button>}
           quantity={product.quantity}
           addBtn={<button onClick={() => dispatch(addProduct(product))}>+</button>}
         />

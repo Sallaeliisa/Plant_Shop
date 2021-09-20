@@ -3,6 +3,7 @@ import { getAll, getCart } from "../../services/request";
 export const INIT_PRODUCTS = "INIT_PRODUCTS";
 export const INIT_CART = "INIT_CART";
 export const ADD_PRODUCT = "ADD_PRODUCT";
+export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
 
 export const initializeProducts = () => {
   return async (dispatch) => {
@@ -29,6 +30,15 @@ export const addProduct = (product) => {
     dispatch({
       type: ADD_PRODUCT,
       data: product,
+    });
+  };
+};
+
+export const removeProduct = (productId) => {
+  return (dispatch) => {
+    dispatch({
+      type: REMOVE_PRODUCT,
+      data: productId,
     });
   };
 };
