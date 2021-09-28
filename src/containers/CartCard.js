@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
 const CartCard = ({ mainImg, name, latinName, color, prize, quantity, removeBtn, addBtn }) => {
+  
   return (
     <Card border="light" style={{ width: "100%" }}>
       <Card.Img variant="top" src={mainImg} />

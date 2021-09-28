@@ -11,7 +11,7 @@ const MainRouter = () => {
 
   cart.map((item) => {
     count += item.quantity;
-    console.log(count); 
+    return count; 
   });
 
   return (

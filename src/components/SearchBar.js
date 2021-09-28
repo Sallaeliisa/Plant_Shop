@@ -1,15 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { ReactComponent as Flower } from "./flower.svg";
 
-const ProductNav = () => {
+const SearchBar = () => {
 
   return (
     <div className="productNavContainer">
@@ -61,4 +59,4 @@ const ProductNav = () => {
   );
 };
 
-export default ProductNav;
+export default SearchBar;

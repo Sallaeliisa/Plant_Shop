@@ -7,6 +7,11 @@ export const getAll = async () => {
     return response.data;
 };
 
+export const getSingle = async (id) => {
+    const response = await axios.get(baseUrl + '/products/' + id);
+    return response.data;
+};
+
 export const getCart = async () => {
     const response = await axios.get(baseUrl + '/cart');
     return response.data;

@@ -7,10 +7,14 @@
 }
 
 nav {
-  background-color: $primary-color;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  // border-bottom: 2px solid $primary-color;
   ul {
     list-style: none;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 0;
   }
   li {
@@ -23,20 +27,66 @@ nav {
   }
 }
 
+.home {
+
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 3rem;
+  }
+
+  #heroBannerP {
+    font-size: 26px;
+    color: wheat;
+    line-height: 2;
+    font-style: italic;
+  }
+.heroBanner {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: center;
+  margin-top: 0;
+  background-color: #134038;
+  height: 45vh;
+  width: 100%;
+  background: url("https://source.unsplash.com/4IqTki_q8KI/1600x900") center
+    center/cover no-repeat fixed;
+}
+
+#bgCircle {
+  background-color: rgba(51, 51, 51, 0.75);
+  border-radius: 50%;
+  box-shadow: 0 0 5px $primary-color;
+  height: 17vw;
+  width: 17vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7vw;
+}
+
+.productCardList {
+  width: 50%;
+  display: grid;
+  grid-gap: 1.5vw;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+}
+
 //Product cards
 
 .gridContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .productCardList {
   width: 60%;
   display: grid;
-  // grid-auto-columns: max-content;
-  // grid-auto-flow: dense;
-  // grid-auto-rows: minmax(50px, fit-content(100%));
   grid-gap: 1.5vw;
   grid-template-columns: repeat(4, 1fr);
 
@@ -84,12 +134,17 @@ svg {
   margin-left: 1rem;
   height: 20px;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
 }
 
 .productNavContainer {
   display: flex;
   justify-content: center;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 3rem 0;
 }
 
 .productNav {
@@ -137,26 +192,16 @@ svg {
     }
   }
 
-  // #red {
-  //   color: red;
-  // }
-  // #orange {
-  //   color: orange;
-  // }
-  // #yellow {
-  //   color: yellow;
-  // }
-  // #green {
-  //   color: green;
-  // }
-  // #blue {
-  //   color: blue;
-  // }
-  // #purple {
-  //   color: purple;
-  // }
+}
 
+.singleProduct {
 
+  width: 50vw;
+
+  img.card-img-top {
+    height: 400px;
+    object-fit: cover;
+  }
 }
 
 

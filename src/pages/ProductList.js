@@ -1,8 +1,10 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { addProduct } from "../store/actions/actions";
 import ProductCard from "../containers/ProductCard";
-import ProductNav from "../components/ProductNav";
+import SingleProduct from "../containers/SingleProduct";
+import SearchBar from "../components/SearchBar";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,6 +26,7 @@ const ProductList = () => {
     return (
       <div key={product.id}>
         <ProductCard
+          id={product.id}
           mainImg={product.mainImg}
           name={product.name}
           latinName={product.latinName}
@@ -37,10 +40,17 @@ const ProductList = () => {
 
   return (
     <div>
-      <ProductNav />
+      <Switch>
+      <Route path="/products/:id">
+          <SingleProduct />
+        </Route>
+      <Route path="/products" exact>
+      <SearchBar />
       <div className="gridContainer">
         <div className="productCardList">{listedProducts}</div>
       </div>
+      </Route>
+      </Switch>
     </div>
   );
 };
