@@ -10,17 +10,14 @@ const Cart = () => {
 
   const cartItems = cart.map((product) => {
     return (
-      <div key={product.id}>
-        <CartCard
-          mainImg={product.mainImg}
-          name={product.name}
-          latinName={product.latinName}
-          color={product.color}
-          prize={product.prize}
-          removeBtn={<button onClick={() => dispatch(removeProduct(product.id))}>-</button>}
-          quantity={product.quantity}
-          addBtn={<button onClick={() => dispatch(addProduct(product))}>+</button>}
-        />
+      <div className="cart" key={product.id}>
+          <img src={product.mainImg} alt='product'/>
+          <p>{product.name}</p>
+          <p>{product.color}</p>
+          <button onClick={() => dispatch(removeProduct(product.id))}>-</button>
+          {product.quantity}
+          <button onClick={() => dispatch(addProduct(product))}>+</button>
+          <p>{product.prize} €</p>
       </div>
     );
   });

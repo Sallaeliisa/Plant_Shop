@@ -1,0 +1,17 @@
+name: cicd
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Hello
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo node version:`node -v` 
+        pwd 
